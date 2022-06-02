@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-light bg-warning">
+        <a class="navbar-brand mx-auto" href="/">New whatsopp</a>
+    </nav>
+    <!-- Aqui agregué un div "nusuario" en donde al presionar el botón "conectados" aparece
+    la lista de los usuarios que se han conectado -->
+    <div id="nusuario"></div>
+    <div class="card-body">
+        <button type="button" id="conectados" class="btn btn-warning">Conectados</button>
+    </div>
+    <!-- Aqui se contiene el chat donde hay un div con id con el mismo nombre, con un input para agregar un
+    mensaje que se quiera enviar por medio del botón del mismo nombre -->
+    <div class="container">
+       <div class="col-md-6my mt-4">
+           <div class="card">
+               <div class="card-header">
+                   <g4>Chatiemos</g4>
+               </div>
+               <div id="chat" class="card-body"></div>
+               <div class="card-footer">
+                 <form id="message-form" class="card-footer">
+                   <div class="input-group">
+                    <input type="text" id="message" class="form-control">
+                    <div class="input-group-append">
+                        <button type="button" class="btn btn-warning" id="enviar">Enviar</button>
+                    </div>
+                    
+                   </div>  
+                 </form>  
+               </div>
+           </div>
+           <!-- Aquí cree la estructura para enviar un mensaje especificamente a el usuario que 
+           introduzcas en el input "destinatario", y también tiene un input para introducir
+           el mensaje a enviar con su respectiva botton que activa esa función -->
+           <div class="card">
+            <div class="card-header">
+                Mensaje privado
+            </div>
+               <div class="card-footer">
+                <form class="card-footer">
+                  <div class="input-group">
+                   <input type="text" id="destinatario" placeholder="Usuario Destino" class="form-control">
+                   <div class="input-group">
+                    <input type="text" id="msgpriv" placeholder="texto" class="form-control">    
+                   </div>
+                   <div class="input-group-append">
+                       <button type="button" class="btn btn-warning" id="enviarpriv">Enviar</button>
+                   </div>
+                </div>
+              </div>
+           </div>
+       </div>
+ <!-- Aquí cree la estructura donde agregué un input para introducir el usuario y el botón
+ que está referenciado al app.js para establecer la conexión -->
+       <br><br>
+       <div class="card-header">
+        <g4>Username</g4>
+    </div>
+       <div class="card-footer">
+        <form class="card-footer">
+          <div class="input-group">
+           <input type="text" id="user" class="form-control">
+           <div class="input-group-append">
+               <button type="button" class="btn btn-warning" id="enviaruser">Empecemos!</button>
+           </div>
+        </div>
+      </div>
+
+
+</body>
+<script src="js/app.js"></script>
+</html>
