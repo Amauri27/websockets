@@ -1,7 +1,7 @@
-//varable donde hace referencia al div para mostrar los usuarios conectados
+//variable donde hace referencia al div para mostrar los usuarios conectados
 let nusuario = document.getElementById('nusuario');
 let btnConc = document.getElementById('conectados');
-//varables para hacer funcionar el chat
+//variables para hacer funcionar el chat
 let messageBox = document.getElementById('message');
 let chat = document.getElementById('chat');
 let enviar =document.getElementById('enviar');
