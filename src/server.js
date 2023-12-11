@@ -4,7 +4,7 @@ const usuarios = new Array();
 
 
 const wss = new WebSocket.Server({ port: 8080 })
-// aquí se conceta el servidor y recibe las conexiones y lo que mandas los usuarios
+// aquí se conceta el servidor y recibe las conexiones y los mensajes alos usuarios
 wss.on('connection', ws => {
 
   ws.on('message', message => {
